@@ -2,7 +2,9 @@ language: python
 os:
     - linux
 install:
-    - pip install nose codecov
-script: nosetests --with-coverage tests
+    - pip install -U nose codecov unittest2
+script:
+    - ls -la
+    - nosetests -v --with-coverage --cover-package=codecov
 after_success:
     - codecov

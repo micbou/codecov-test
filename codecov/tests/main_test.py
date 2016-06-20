@@ -1,5 +1,5 @@
 from nose.tools import eq_
-import some_module
+from codecov import some_module
 
 
 def Main_test():
