@@ -1,0 +1,8 @@
+language: python
+os:
+    - linux
+install:
+    - pip install nose codecov
+script: nosetests tests
+after_success:
+    - codecov
