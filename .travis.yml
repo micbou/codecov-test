@@ -3,6 +3,6 @@ os:
     - linux
 install:
     - pip install nose codecov
-script: nosetests tests
+script: nosetests --with-coverage tests
 after_success:
     - codecov
